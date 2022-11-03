@@ -152,6 +152,88 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-我的第三篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/10/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">基础语句与案例</a>
+    </h1>
+  
+
+        
+        <a href="/2022/10/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
+  	<time datetime="2022-10-28T05:43:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-10-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="js基础"><a href="#js基础" class="headerlink" title="js基础"></a>js基础</h1><h2 id="数据类型转换"><a href="#数据类型转换" class="headerlink" title="数据类型转换"></a>数据类型转换</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> year=<span class="title function_">prompt</span>(<span class="string">&#x27;输入你出生的年份：&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> userage=<span class="number">2022</span>-year;<span class="comment">//str类型转化为num类型</span></span><br><span class="line"><span class="title function_">alert</span>(<span class="string">&#x27;你现在的年龄为&#x27;</span>+userage+<span class="string">&#x27;岁&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>运算符–前递增与后递增</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> e=<span class="number">10</span>;</span><br><span class="line">       <span class="keyword">var</span> f=e++ + ++e;<span class="comment">//e++ =10,e=11;e=12 ++e=12</span></span><br><span class="line">       <span class="title function_">alert</span>(f);<span class="comment">//22</span></span><br></pre></td></tr></table></figure>
+
+<p>if循环经典案例：判断闰年</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> year=<span class="title function_">prompt</span>(<span class="string">&#x27;输入年份&#x27;</span>);</span><br><span class="line"><span class="keyword">if</span>(year%<span class="number">4</span>==<span class="number">0</span>&amp;&amp;year%<span class="number">100</span> !=<span class="number">0</span>||year%<span class="number">400</span>==<span class="number">0</span>)&#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;闰年&#x27;</span>)</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&#x27;平年&#x27;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>switch案例：查询水果店里的水果单价</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> friut=<span class="title function_">prompt</span>(<span class="string">&#x27;输入水果名称&#x27;</span>);</span><br><span class="line"><span class="keyword">switch</span>(friut)&#123;<span class="keyword">case</span> <span class="string">&#x27;苹果&#x27;</span>:<span class="title function_">alert</span>(<span class="string">&#x27;5.66/斤&#x27;</span>);</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&#x27;香蕉&#x27;</span>:<span class="title function_">alert</span>(<span class="string">&#x27;3.5元/斤&#x27;</span>);</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&#x27;西瓜&#x27;</span>:<span class="title function_">alert</span>(<span class="string">&#x27;3元/斤&#x27;</span>);</span><br><span class="line">    <span class="attr">default</span>:<span class="title function_">alert</span>(<span class="string">&#x27;没有该种水果&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>for语句：输入班级总人数与每一个同学的成绩，输出班级总分与平均分</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> num=<span class="title function_">prompt</span>(<span class="string">&#x27;班级总人数&#x27;</span>);<span class="comment">//num是总人数</span></span><br><span class="line"><span class="keyword">var</span> sum=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> average=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">1</span>;i&lt;=num;i++)&#123;</span><br><span class="line">    <span class="keyword">var</span> score=<span class="title function_">prompt</span>(<span class="string">&#x27;请输入第&#x27;</span>+i+<span class="string">&#x27;个学生成绩&#x27;</span>);</span><br><span class="line">    sum=sum+<span class="built_in">parseFloat</span>(score);</span><br><span class="line">&#125;</span><br><span class="line">average=sum/num;</span><br><span class="line"><span class="title function_">alert</span>(<span class="string">&#x27;班级总成绩为：&#x27;</span>+sum);</span><br><span class="line"><span class="title function_">alert</span>(<span class="string">&#x27;班级的平均分:&#x27;</span>+average);</span><br></pre></td></tr></table></figure>
+
+<p>for语句：追加字符串方式打印一串小星星</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str=<span class="string">&#x27;&#x27;</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">1</span>;i&lt;=<span class="number">5</span>;i++)&#123;</span><br><span class="line">    str=str+<span class="string">&#x27;☆&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">alert</span>(str);</span><br></pre></td></tr></table></figure>
+
+<p>​	双重for循环语句：用户控制星星行数与列数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">var</span> rows=<span class="title function_">prompt</span>(<span class="string">&#x27;输入星星的行数&#x27;</span>);</span><br><span class="line"> <span class="keyword">var</span> cols=<span class="title function_">prompt</span>(<span class="string">&#x27;输入星星的列数&#x27;</span>);</span><br><span class="line"> <span class="keyword">var</span> str=<span class="string">&#x27;&#x27;</span>;</span><br><span class="line"> <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">1</span>;i&lt;=cols;i++)&#123;</span><br><span class="line">     <span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=rows;j++)&#123;</span><br><span class="line">     str=str+<span class="string">&#x27;☆&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  str=str+<span class="string">&#x27;\n&#x27;</span><span class="comment">//每打印一行，就换行</span></span><br><span class="line"> &#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str);</span><br></pre></td></tr></table></figure>
+
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/10/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-第二篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -172,7 +254,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="css常用几种样式"><a href="#css常用几种样式" class="headerlink" title="css常用几种样式"></a>css常用几种样式</h2><pre><code># 盒模型
+        <h2 id="css常用几种样式"><a href="#css常用几种样式" class="headerlink" title="css常用几种样式"></a>css常用几种样式</h2><pre><code>## 盒模型
+ 
 
 # 定位
 
